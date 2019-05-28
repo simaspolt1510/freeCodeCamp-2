@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 id="title">Survey Form</h1>
+        </div>
+        <div class="content" id="form-container">
+            <p id="description">Tell me how important is music in your life!</p>
+            <form id="survey-form" method="GET">
+                <div class="row">
+                    <div class="labels">
+                        <label class="name-label" for="name">* Name: </label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your Name" required>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="labels">
+                        <label class="email-label" for="email">* Email: </label>
+                    </div>
+                    <div class="inputs">
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="labels">
+                        <label class="age-label" for="age">* Age: </label>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" class="input-field" name="age" id="number" min="1" max="125" placeholder="Age">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="labels">
+                        <label for="musicGenre">* Which is your favourite music genre?</label>
+                    </div>
+                    <div class="inputs">
+                        <select name="musicGenres" id="dropdown">
+                            <option disabled value>Select a genre</option>
+                            <option value="rock">Rock</option>
+                            <option value="blues">Blues</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="pop">Pop</option>
+                            <option value="classical">Classical</option>
+                            <option value="funk">Funk</option>
+                            <option value="latin">Latin</option>
+                            <option value="hipHop">Hip-Hop/Rap</option>
+                            <option value="metal">Heavy Metal</option>
+                            <option value="Electronic/Dance">Electronic/Dance</option>
+                            <option value="soul">Soul/R&B</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="row--margin-top--higher">
+                    <div class="labels">
+                        <label id="label--margin-top--higher" for="frequency">How often do you listen to music?</label>
+                    </div>
+                    <div class="inputs">
+                        <ul>
+                            <li class="item-radio"><input type="radio" name="radio-button" id="radio-buttons" value="1"><label>More than one hour a day</label></li>
+                            <li class="item-radio"><input type="radio" name="radio-button" id="radio-buttons" value="2"><label>Once a day</label></li>
+                            <li class="item-radio"><input type="radio" name="radio-button" id="radio-buttons" value="3"><label>Few times a week</label></li>
+                            <li class="item-radio"><input type="radio" name="radio-button" id="radio-buttons" value="4"><label>Once a week</label></li>
+                            <li class="item-radio"><input type="radio" name="radio-button" id="radio-buttons" value="5"><label>Not very often / Ocasionally</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="row--margin-top--higher">
+                    <div class="labels">
+                        <label for="whereTo">Which place or situation do you prefer for listening to music?</label>
+                    </div>
+                    <div class="inputs">
+                        <select name="places" id="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="home">At Home</option>
+                            <option value="travel">Travelling</option>
+                            <option value="work">At work</option>
+                            <option value="out">Going out / Party</option>
+                            <option value="noPlace">No place or situation in particular</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="row--margin-top--higher">
+                    <div class="labels">
+                        <label for="">In which ways do you listen to music? (You can choose several options)</label>
+                    </div>
+                    <div class="inputs">
+                        <ul>
+                            <li class="checkboxes"><input type="checkbox" name="preference" id="box" value="1">CD</li>
+                            <li class="checkboxes"><input type="checkbox" name="preference" id="box" value="2">Vinyl</li>
+                            <li class="checkboxes"><input type="checkbox" name="preference" id="box" value="3">Digital / Streaming (Spotify, Youtube, iTunes, etc.)</li>
+                            <li class="checkboxes"><input type="checkbox" name="preference" id="box" value="4">Live Shows</li>
+                            <li class="checkboxes"><input type="checkbox" name="preference" id="box" value="5">Radio</li>
+                            <li class="checkboxes"><input type="checkbox" name="preference" id="box" value="6">Other</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="row--margin-top--higher">
+                    <div class="labels">
+                        <label for="comment">Describe your relashionship with music in one sentence:</label>
+                    </div>
+                    <div class="inputs"><textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here"></textarea></div>    
+                </div>
+                <button type="submit" id="submit">Submit</button>
+
+                
+            </form>
+        </div>
+        <div class="footer">Author: Maxi Spoltore. This is my second freeCodeCamp project</div>
+    </div>
+</body>
+</html>

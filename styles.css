@@ -1,0 +1,109 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    background-image: url("music.jpg");
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(255, 226, 154);
+    border: 4px solid goldenrod;
+    border-radius: 6px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+        ". title ."
+        ". content ."
+        "footer footer footer";
+}
+
+.title {
+    grid-area: title;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+#form-container {
+    background-color: rgb(253, 235, 211);
+    border: 4px solid goldenrod;
+    border-radius: 6px;
+    opacity: 0.95;
+
+}
+
+#survey-form {
+    margin: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.2em 0;
+}
+
+.labels {
+    text-align: right;
+    width: 50%;
+    margin-right: 0.5em;
+    margin-left: 2em;
+}
+
+.inputs {
+    text-align: left;
+    width: 50%;
+    margin-left: 0.5em;
+    margin-right: 2em;
+}
+
+.input-field {
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+#row--margin-top--higher {
+    margin-top: 2.7em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#comments {
+    max-width: 300px;
+    height: 80px;
+    max-height: 500px;
+}
+
+#submit {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 14px;
+    background-color: rgb(250, 182, 35);
+    border: 1.5px solid rgb(185, 121, 2);
+    border-radius: 4px;
+    color: rgb(85, 62, 1);
+}
+
+.footer {
+    background-color: goldenrod;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+    font-size: 0.8em;
+    font-weight: 700;
+}
